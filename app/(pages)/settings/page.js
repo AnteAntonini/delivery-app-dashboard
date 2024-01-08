@@ -3,7 +3,9 @@ const Settings = () => {
     <div className="text-black px-8 py-6">
       <h1 className="mb-10 font-bold text-lg">Restaurant Details</h1>
       <div className="mb-6">
-        <h2 className="font-semibold mb-2">Restaurant Name</h2>
+        <h2 className="font-semibold mb-2">
+          <span className="text-red-500">* </span>Restaurant Name
+        </h2>
         <input
           type="text"
           required
@@ -12,7 +14,9 @@ const Settings = () => {
         />
       </div>
       <div className="mb-6">
-        <h2 className="font-semibold mb-2">Restaurant Address</h2>
+        <h2 className="font-semibold mb-2">
+          <span className="text-red-500">* </span>Restaurant Address
+        </h2>
         <input
           type="text"
           required

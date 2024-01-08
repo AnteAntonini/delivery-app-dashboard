@@ -1,5 +1,6 @@
 import React from "react";
 import StatusChip from "./StatusChip";
+import Link from "next/link";
 
 export const CustomTable = ({
   title,
@@ -14,9 +15,12 @@ export const CustomTable = ({
       <div className="flex justify-between">
         <h1 className="text-black font-bold text-lg">{title}</h1>
         {menuTable && (
-          <div className="text-white bg-green-500 py-1 px-2 rounded-sm cursor-pointer">
+          <Link
+            href={"/menu/create"}
+            className="text-white bg-green-500 py-1 px-2 rounded-sm cursor-pointer"
+          >
             New item
-          </div>
+          </Link>
         )}
       </div>
       <div className="p-6 mt-4">

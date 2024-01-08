@@ -4,19 +4,19 @@ export default function SideNavigation() {
   const navigation = [
     {
       name: "Orders",
-      href: "orders",
+      href: "/orders",
     },
     {
       name: "Menu",
-      href: "menu",
+      href: "/menu",
     },
     {
       name: "Order History",
-      href: "order-history",
+      href: "/order-history",
     },
     {
       name: "Settings",
-      href: "settings",
+      href: "/settings",
     },
   ];
 
