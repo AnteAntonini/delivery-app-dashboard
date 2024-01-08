@@ -22,8 +22,8 @@ export default function SideNavigation() {
 
   return (
     <div className="h-screen w-1/4 bg-white ">
-      <div className="p-6 bg-black">
-        <h1 className="text-blue-500 text-2xl ">Delivery App</h1>
+      <div className="p-6 bg-orange-400">
+        <h1 className="text-white text-2xl font-semibold">Delivery App</h1>
       </div>
       <ul className="text-black pl-6">
         {navigation.map((navItem) => (
