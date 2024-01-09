@@ -42,21 +42,21 @@ export const CustomTable = ({
               >
                 {Object.keys(data).map((key, index) => (
                   <React.Fragment key={index}>
-                    {key === "status" ? (
-                      <td>
-                        <StatusChip
-                          currentStatus={data[key]}
-                          title={data[key]}
-                        />
+                    {key === "orderID" ? (
+                      <td className="text-blue-500 font-semibold">
+                        <Link href={`orders/${data[key]}`}>{data[key]}</Link>
                       </td>
                     ) : (
-                      <>
-                        {key === "price" ? (
-                          <td className="py-4">{data[key]} €</td>
+                      <td className="py-4">
+                        {key === "status" ? (
+                          <StatusChip
+                            currentStatus={data[key]}
+                            title={data[key]}
+                          />
                         ) : (
-                          <td className="py-4">{data[key]}</td>
+                          <>{key === "price" ? `${data[key]} €` : data[key]}</>
                         )}
-                      </>
+                      </td>
                     )}
                   </React.Fragment>
                 ))}
