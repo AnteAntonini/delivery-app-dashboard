@@ -8,7 +8,7 @@ const OrderDetails = () => {
   });
 
   return (
-    <div>
+    <div className="h-screen">
       <div className="text-black p-6">
         <h1 className="text-xl font-semibold mb-10">Order</h1>
         <div className="px-6 mb-10">
@@ -30,11 +30,32 @@ const OrderDetails = () => {
               <span className="font-semibold">€ {dish.price}</span>
             </div>
           ))}
-          <div>
-            <div className="flex justify-between mt-8">
-              <span className="font-bold text-lg">Total:</span>
-              <span className="font-bold text-lg"> €{totalPrice}</span>
+          {dishes.map((dish) => (
+            <div className="flex justify-between border-b-[1px] border-gray py-2">
+              <span className="font-bold">
+                {dish.name} x{dish.quantity}
+              </span>
+              <span className="font-semibold">€ {dish.price}</span>
             </div>
+          ))}
+          <div>
+            <div className="flex justify-between my-10">
+              <span className="font-bold text-xl">Total:</span>
+              <span className="font-bold text-xl"> €{totalPrice}</span>
+            </div>
+          </div>
+          <div className="flex justify-around mb-16">
+            <button className="text-white bg-red-500 py-2 rounded-sm cursor-pointer flex-1 mr-10">
+              Decline Order
+            </button>
+            <button className="text-white bg-green-500 py-2  rounded-sm cursor-pointer flex-1">
+              Accept Order
+            </button>
+          </div>
+          <div className="flex ">
+            <button className="text-white bg-green-500 py-2  rounded-sm cursor-pointer flex-1">
+              Food is Done
+            </button>
           </div>
         </div>
       </div>

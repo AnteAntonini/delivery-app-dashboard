@@ -21,7 +21,7 @@ export default function SideNavigation() {
   ];
 
   return (
-    <div className="h-screen w-1/4 bg-white ">
+    <div className="min-h-screen flex flex-col w-1/4 bg-white">
       <div className="p-6 bg-orange-400">
         <h1 className="text-white text-2xl font-semibold">Delivery App</h1>
       </div>

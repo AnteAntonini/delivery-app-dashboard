@@ -11,7 +11,7 @@ export const CustomTable = ({
   menuTable,
 }) => {
   return (
-    <div className="p-6">
+    <div className="p-6 h-full">
       <div className="flex justify-between">
         <h1 className="text-black font-bold text-lg">{title}</h1>
         {menuTable && (
