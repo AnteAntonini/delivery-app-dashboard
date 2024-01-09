@@ -1,8 +1,8 @@
 export default function PageWrapper({ children }) {
   return (
-    <main className="flex flex-1 items-center justify-start min-h-screen">
-      <div className="w-full bg-gray-400 p-6">
-        <div className="bg-white ">{children}</div>
+    <main className="flex flex-1 justify-start">
+      <div className="w-full bg-gray-400 py-6 px-6">
+        <div className="bg-white">{children}</div>
       </div>
     </main>
   );
