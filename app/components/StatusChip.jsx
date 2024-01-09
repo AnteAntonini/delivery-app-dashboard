@@ -15,7 +15,8 @@ const StatusChip = ({ currentStatus, title }) => {
 
   return (
     <div
-      className={`inline-block cursor-pointer border-2 p-1 ${getStatusClasses()} min-w-[85px] text-center`}
+      className={`inline-block
+       border-2 p-1 ${getStatusClasses()} min-w-[85px] text-center`}
     >
       {title}
     </div>
